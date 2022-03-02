@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PowerBIEmbedModule } from 'powerbi-client-angular';
+import { HttpClient, HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { PowerBIEmbedModule } from 'powerbi-client-angular';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PowerBIEmbedModule
+    PowerBIEmbedModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
